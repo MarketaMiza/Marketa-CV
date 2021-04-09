@@ -223,7 +223,9 @@ h5 {
   flex-direction: row;
   width: 1000px;
   margin: auto;
+  margin-bottom: 30px;
   padding-left: 10px;
+  padding-top: 20px;
   border-top: 1px rgb(8, 3, 78) dotted;
   font-size: 10px;
 }
