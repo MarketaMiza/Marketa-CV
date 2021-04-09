@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-color: #ebe9e9; 
+  background-color: #ebe9e9;
 }
 
 /* hlavní obal, bílý podklad */
@@ -129,7 +129,7 @@ h3 {
 .info {
   width: 1000px;
   margin: 0px 100px;
-  padding:  0 20px;
+  padding: 0 20px;
   border-bottom: 1px rgb(8, 3, 78) dotted;
 }
 
@@ -152,11 +152,10 @@ p {
   width: 350px;
   padding-left: 20px;
   border-right: 1px rgb(8, 3, 78) dotted;
-  
 }
 
 ul {
- margin-left: 20px;
+  margin-left: 20px;
 }
 
 li {
@@ -170,7 +169,6 @@ li {
   width: 750px;
   margin-left: 70px;
   padding-left: 20px;
- 
 }
 
 .list {
@@ -238,10 +236,9 @@ strong {
   margin: auto 300px;
   width: 100px;
   padding: 5px;
-  border: 1px  rgb(34, 156, 204) solid;
+  border: 1px rgb(34, 156, 204) solid;
   border-radius: 5%;
-  text-align: center; 
-
+  text-align: center;
 }
 
 .btn:hover {
@@ -253,7 +250,6 @@ strong {
   color: #091a36;
   font-size: 12px;
   font-weight: 400;
-  
 }
 
 h4 {
@@ -261,4 +257,3 @@ h4 {
   font-size: 12px;
   font-style: italic;
 }
-
