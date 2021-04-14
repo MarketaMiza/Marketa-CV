@@ -16,16 +16,6 @@ html {
 }
 
 body {
-  background-color: #ebe9e9;
-}
-
-/* hlavní obal, bílý podklad */
-.obal {
-  width: 1200px;
-  height: auto;
-  margin: 100px auto;
-  display: flex;
-  flex-direction: column;
   background-color: #fff;
 }
 
@@ -53,207 +43,305 @@ body {
   z-index: 5;
 }
 
-/* BOX - HLAVNÍ BOX, ZÁKLADNÍ NASTAVENÍ - K POTŘEBĚ PRO JEDNOTLIVÉ SEKCE - vnevyužito, ale nechat*/
+/* MOBIL VERSION */
+/* OBAL CV */
+
+.krychle--big {
+  z-index: -5;
+}
+
+.obal {
+  max-width: 380px;
+  margin: 0 auto;
+  background-color: rgb(255, 251, 251);
+}
+/* ZÁKLADNÍ BOX PRO VŠECHNY SEKCE */
 .box {
-  width: 1000px;
-  height: 130px;
-  margin: 100px;
-  position: absolute;
-  z-index: 100;
-  text-align: left;
-  line-height: 15%;
-  background-color: #fff;
-  border: 0.5px rgb(8, 3, 78) solid;
-  color: rgb(8, 3, 78);
+  width: 360px;
+  margin: 5px;
+  padding: 0px;
+  border: 1px #1e1a2f solid;
+}
+/* JMÉNO, POZICE, FOTO */
+.vizitka-box--full {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border: hidden;
 }
 
-/* VIZITKA - jméno a fotka a pozice */
-.box--vizitka {
-  height: 180px;
-  padding-left: 39px;
-  padding-top: 30px;
+.photo img {
+  width: 100px;
+  border-radius: 50%;
+  margin: 20px 10px 15px 60px;
 }
 
-/* písmo na vizitce - hlavička H2 - nadpis */
-.vizitka-jmeno {
-  font-weight: 200;
-  font-size: 3.5rem;
+h2 {
+  font-size: 5vw;
+  margin-top: 40px;
+  color: #15194b;
 }
 
-.vizitka-pozice {
-  font-weight: 200;
-  font-size: 1.5rem;
-  padding-left: 5px;
+h4 {
+  font-size: 4vw;
+  font-weight: 600;
+  margin: 10px;
+  color: #15194b;
 }
 
-/* sekce contact a profil, pokec */
-.contact-profile {
-  width: 1200px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 350px 100px 30px;
-  padding-left: 20px;
-  border-left: 2px rgb(8, 3, 78) solid;
-}
-
-/* podsekce CONTACT */
-.contact {
-  width: 400px;
-}
-
-/* podsekce PROFILE POKEC */
-.profile {
-  width: 700px;
+/* KONTAKT, MOJE PRÁCE */
+.contact-box--grid {
+  border: hidden;
 }
 
 h3 {
-  font-weight: 300;
-  font-size: 1rem;
-}
-
-/* áčka , pozor na klásy */
-.email-link {
-  text-decoration: none;
   font-weight: 600;
-  color: #141414;
-}
-
-/* PO NAJETÍ . HOVER*/
-.email-link:hover {
-  color: rgb(34, 156, 204);
-  font-size: 15px;
-}
-
-/* sekce info */
-.info {
-  width: 1000px;
-  margin: 0px 100px;
-  padding: 0 20px;
-  border-bottom: 1px rgb(8, 3, 78) dotted;
-}
-
-p {
-  font-weight: 200;
-  line-height: 1.5;
-  font-size: 1rem;
-}
-
-/* SKILLS a kurzy SEKCE */
-.skills-kurzy {
-  width: 1200px;
-  width: 250px;
-  margin: 0px 100px;
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-}
-
-.skills {
-  width: 350px;
-  padding-left: 20px;
-  border-right: 1px rgb(8, 3, 78) dotted;
-}
-
-ul {
-  margin-left: 20px;
-}
-
-li {
-  font-weight: 200;
-  line-height: 1.5;
-  font-size: 1rem;
-  margin-left: -40px;
-}
-
-.kurzy {
-  width: 750px;
-  margin-left: 70px;
-  padding-left: 20px;
-}
-
-.list {
-  list-style: none;
-}
-
-h5 {
-  font-weight: 300;
-  font-size: 1rem;
-  margin: 10px 0 10px -40px;
-}
-
-/* job experiences */
-.experiences {
-  width: 1000px;
-  display: flex;
-  flex-direction: column;
-  margin: 0px 100px;
-  padding-left: 20px;
-  border-top: 1px rgb(8, 3, 78) dotted;
-  border-bottom: 1px rgb(8, 3, 78) dotted;
 }
 
 .nadpis-600 {
-  font-weight: 600;
+  font-weight: 700;
+  color: #15194b;
 }
 
-/* reference a hobbies sekce */
-.reference-hobbies {
-  width: 1200px;
-  display: grid;
-  grid-template-columns: repeat(2, 300px);
-  margin: 0px 100px;
+.email-link {
+  text-decoration: none;
+  font-weight: 700;
+  color: #141414;
+  margin: 0;
 }
 
-.reference {
-  width: 350px;
-  border-right: 1px rgb(8, 3, 78) dotted;
+.email-link:hover {
+  color: rgb(34, 156, 204);
+  font-size: 20px;
 }
 
-.hobbies {
-  width: 700px;
-  margin: 0 20px 0 70px;
-  padding-left: 20px;
-  padding-right: 55px;
-}
-
-.konec {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
+/* INFO */
+.info-box--full {
+  border: hidden;
+  line-height: 1.5;
   margin: auto;
-  margin-bottom: 30px;
-  padding-left: 10px;
-  padding-top: 20px;
-  border-top: 1px rgb(8, 3, 78) dotted;
-  font-size: 10px;
 }
 
-strong {
-  font-weight: 500;
+/* SKILLS A KURZY */
+.skills-box--grid {
+  border: hidden;
+}
+
+/* EXPERIENCES */
+.experiences-box--full {
+  border: hidden;
+}
+
+/* REFERENCE A HOBBIES */
+.reference-box--grid {
+  border: hidden;
+  line-height: 1.5;
+  margin: auto;
+}
+
+/* KONEC */
+.konec-box--full {
+  border: hidden;
+  border-top: 0.5px grey solid;
+  text-align: center;
 }
 
 .btn {
-  margin: auto 300px;
-  width: 100px;
+  margin: 20px auto;
   padding: 5px;
   border: 1px rgb(34, 156, 204) solid;
   border-radius: 5%;
   text-align: center;
 }
 
-.btn:hover {
-  background-color: rgb(34, 156, 204);
-}
-
 .pdf {
   text-decoration: none;
   color: #091a36;
-  font-size: 12px;
+  font-size: 15px;
   font-weight: 400;
 }
 
-h4 {
-  font-weight: 400;
-  font-size: 12px;
-  font-style: italic;
+.btn:hover {
+  background-color:  rgb(34, 156, 204);
 }
+
+.list {
+  list-style: none;
+  padding: 0;
+
+}
+
+@media screen and (min-width: 1200px) {
+  /* OBAL CV */
+  .obal {
+    max-width: 1200px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+  }
+
+  .krychle--big {
+    width: 200px;
+    height: 310px;
+    margin-left: 50px;
+  }
+
+  /* HLAVNÍ BOX PRO VŠECHNY SEKCE */
+  .box {
+    width: 1100px;
+    background-color: #fff;
+    border: 0.5px rgb(8, 3, 78) solid;
+    margin: 50px 0;
+    padding-left: 20px;
+  }
+
+  /* JMÉNO, POZICE, FOTO */
+  .vizitka-box--full {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    line-height: 0.5;
+    color: rgb(8, 3, 78);
+    margin-top: 150px;
+  }
+
+  .photo img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1.5px rgb(8, 3, 78) solid;
+    margin: -40px 0px 30px 300px;
+    position: relative;
+  }
+
+  /* h2 a h4 ve vizitce - písmo */
+  .name {
+    font-size: 45px;
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
+  .name-pozice {
+    font-size: 35px;
+    font-weight: 600;
+    margin-left: 50px;
+  }
+
+  /* KONTAKT, MOJE PRÁCE */
+  .contact-box--grid {
+    width: 1090px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: hidden;
+    border-left: 2px rgb(8, 3, 78) solid;
+    color: rgb(8, 3, 78);
+  }
+
+  h3 {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .nadpis-600 {
+    font-weight: 700;
+    font-size: 25px;
+  }
+
+  .email-link {
+    text-decoration: none;
+    font-weight: 700;
+    color: #141414;
+    margin: 0;
+  }
+
+  .email-link:hover {
+    color: rgb(34, 156, 204);
+    font-size: 20px;
+  }
+
+  .profile {
+    margin-left: 100px;
+  }
+
+  /* INFO */
+  .info-box--full {
+    width: 1100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    border: hidden;
+    font-size: 18px;
+  }
+
+  /* SKILLS A KURZY */
+  .skills-box--grid {
+    border: hidden;
+    width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    border: hidden;
+    border-bottom: 1px rgb(8, 3, 78) dotted;
+    border-top: 1px rgb(8, 3, 78) dotted;
+    line-height: 1.5;
+    font-size: 18px;
+  }
+
+  .skills {
+    width: 350px;
+    padding-left: 20px;
+    border-right: 1px rgb(8, 3, 78) dotted;
+  }
+
+  .kurzy {
+    width: 750px;
+    margin-left: 70px;
+    padding-left: 0px;
+  }
+
+  /* EXPERIENCES */
+  .experiences-box--full {
+    width: 1100px;
+    display: flex;
+    flex-direction: column;
+    border: hidden;
+  }
+
+  /* REFERENCE A HOBBIES */
+  .reference-box--grid {
+    width: 1100px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    border: hidden;
+    border-bottom: 1px rgb(8, 3, 78) dotted;
+    border-top: 1px rgb(8, 3, 78) dotted;
+  }
+
+  .reference {
+    width: 350px;
+    border-right: 1px rgb(8, 3, 78) dotted;
+  }
+
+  .hobbies {
+    width: 700px;
+    margin: 0 20px 0 70px;
+    padding-left: 20px;
+    padding-right: 55px;
+  }
+
+  /* KONEC */
+  .konec-box--full {
+   
+    border: hidden;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .pdf {
+    margin: auto;
+  };
+}
+
+/* @media screen and (min-width: 640px) {
+
+} */
