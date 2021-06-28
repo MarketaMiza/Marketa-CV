@@ -60,7 +60,7 @@ body {
   width: 360px;
   margin: 5px;
   padding: 0px;
-  border: 1px #1e1a2f solid;
+  /* border: 1px #1e1a2f solid;*/
 }
 /* JMÉNO, POZICE, FOTO */
 .vizitka-box--full {
@@ -141,12 +141,11 @@ h3 {
 /* KONEC */
 .konec-box--full {
   border: hidden;
-  border-top: 0.5px grey solid;
   text-align: center;
 }
 
 .btn {
-  margin: 20px auto;
+  margin: auto;
   padding: 5px;
   border: 1px rgb(34, 156, 204) solid;
   border-radius: 5%;
@@ -178,17 +177,17 @@ h3 {
     background-color: rgb(255, 255, 255);
   }
 
-  .krychle--big {
+  /* .krychle--big {
     width: 200px;
     height: 310px;
     margin-left: 50px;
-  }
+  } */
 
   /* HLAVNÍ BOX PRO VŠECHNY SEKCE */
   .box {
     width: 1100px;
     background-color: #fff;
-    border: 0.5px rgb(8, 3, 78) solid;
+    /* border: 0.5px rgb(8, 3, 78) solid; */
     margin: 50px 0;
     padding-left: 20px;
   }
@@ -206,7 +205,7 @@ h3 {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 1.5px rgb(8, 3, 78) solid;
+    /* border: 1.5px rgb(8, 3, 78) solid; */
     margin: -40px 0px 30px 300px;
     position: relative;
   }
@@ -232,7 +231,7 @@ h3 {
     flex-wrap: wrap;
     padding: 20px;
     border: hidden;
-    border-left: 2px rgb(8, 3, 78) solid;
+    /* border-left: 2px rgb(8, 3, 78) solid;*/
     color: rgb(8, 3, 78);
   }
 
@@ -280,8 +279,8 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     border: hidden;
-    border-bottom: 1px rgb(8, 3, 78) dotted;
-    border-top: 1px rgb(8, 3, 78) dotted;
+    /* border-bottom: 1px rgb(8, 3, 78) dotted;*/
+    /*border-top: 1px rgb(8, 3, 78) dotted;*/
     line-height: 1.5;
     font-size: 18px;
   }
@@ -345,3 +344,7 @@ h3 {
 /* @media screen and (min-width: 640px) {
 
 } */
+
+body {
+  font-size: 1em;
+}
