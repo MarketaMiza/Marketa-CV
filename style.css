@@ -312,8 +312,8 @@ h3 {
     display: grid;
     grid-template-columns: repeat(2, 300px);
     border: hidden;
-    border-bottom: 1px rgb(8, 3, 78) dotted;
-    border-top: 1px rgb(8, 3, 78) dotted;
+    /* border-bottom: 1px rgb(8, 3, 78) dotted;
+    border-top: 1px rgb(8, 3, 78) dotted; */
   }
 
   .reference {
